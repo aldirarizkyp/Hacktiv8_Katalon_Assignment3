@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC-Edit Profile Identity</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3164ba40-c2eb-4f49-8f9b-aeb56fcf8902</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>9330201f-82d5-4a1d-880c-ced195fc6b10</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>1e38ce32-25f2-495d-aabe-d0e0d80a1c17</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ac43fbd1-d509-44b9-b70b-bb81b51a076a</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>7a165fca-8057-416b-8d3e-880edb328a75</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Aldira'</defaultValue>
+      <description></description>
+      <id>9330201f-82d5-4a1d-880c-ced195fc6b10</id>
+      <masked>false</masked>
+      <name>name</name>
+   </variable>
+   <variable>
+      <defaultValue>'aldira@gmail.com'</defaultValue>
+      <description></description>
+      <id>1e38ce32-25f2-495d-aabe-d0e0d80a1c17</id>
+      <masked>false</masked>
+      <name>email</name>
+   </variable>
+   <variable>
+      <defaultValue>'087734232321'</defaultValue>
+      <description></description>
+      <id>ac43fbd1-d509-44b9-b70b-bb81b51a076a</id>
+      <masked>false</masked>
+      <name>phonenumber</name>
+   </variable>
+   <variable>
+      <defaultValue>'Senayan Jakarta'</defaultValue>
+      <description></description>
+      <id>7a165fca-8057-416b-8d3e-880edb328a75</id>
+      <masked>false</masked>
+      <name>address</name>
+   </variable>
+</TestCaseEntity>
