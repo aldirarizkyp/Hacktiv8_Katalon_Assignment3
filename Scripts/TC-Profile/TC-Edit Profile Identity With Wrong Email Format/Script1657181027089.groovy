@@ -17,9 +17,11 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FAILURE)
+Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.OPTIONAL)
 
 Mobile.waitForElementPresent(findTestObject('NavBar_Object/btn_Profile'), 0)
+
+Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('NavBar_Object/btn_Profile'), 0)
 
@@ -48,6 +50,6 @@ Mobile.verifyElementVisible(findTestObject('ProfilePage_Object/Profile-Identity_
 
 Mobile.pressBack()
 
-'back to the main page'
-Mobile.tap(findTestObject('NavBar_Object/btn_Recent'), 0)
+'back to the main page\r\n'
+Mobile.pressBack()
 
