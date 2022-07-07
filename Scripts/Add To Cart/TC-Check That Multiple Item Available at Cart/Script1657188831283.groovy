@@ -18,9 +18,10 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory as MobileDriverFactory
 import io.appium.java_client.AppiumDriver as AppiumDriver
-import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.waitForElementPresent(findTestObject('RecentPage_Object/imgView_Apple watch'), 0)
 
 Mobile.tap(findTestObject('RecentPage_Object/imgView_Apple watch'), 0)
 
@@ -39,10 +40,6 @@ def toast = driver.findElementByXPath('//android.widget.Toast[@text=\'Success ad
 
 println('Toast element: ' + toast)
 
-if (toast == null) {
-    KeywordUtil.markFailed('ERROR: Toast object not found!')
-}
-
 'Back to the main page\r\n'
 Mobile.pressBack()
 
@@ -60,10 +57,6 @@ Mobile.tap(findTestObject('RecentPage_Object/ItemInfo_Object/btn_ADD'), 0)
 
 println('Toast element: ' + toast)
 
-if (toast == null) {
-    KeywordUtil.markFailed('ERROR: Toast object not found!')
-}
-
 'Back to the main page\r\n'
 Mobile.pressBack()
 
@@ -79,10 +72,6 @@ Mobile.setText(findTestObject('RecentPage_Object/ItemInfo_Object/txtField_Number
 Mobile.tap(findTestObject('RecentPage_Object/ItemInfo_Object/btn_ADD'), 0)
 
 println('Toast element: ' + toast)
-
-if (toast == null) {
-    KeywordUtil.markFailed('ERROR: Toast object not found!')
-}
 
 Mobile.tap(findTestObject('Cart_Object/btn_Cart'), 0)
 

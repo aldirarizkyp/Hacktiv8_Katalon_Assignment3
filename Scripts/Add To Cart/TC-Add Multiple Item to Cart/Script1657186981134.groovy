@@ -18,9 +18,10 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory as MobileDriverFactory
 import io.appium.java_client.AppiumDriver as AppiumDriver
-import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.waitForElementPresent(findTestObject('RecentPage_Object/imgView_Apple watch'), 0)
 
 Mobile.tap(findTestObject('RecentPage_Object/imgView_Apple watch'), 0)
 
@@ -35,17 +36,13 @@ Mobile.tap(findTestObject('RecentPage_Object/ItemInfo_Object/btn_ADD'), 0)
 
 AppiumDriver<?> driver = MobileDriverFactory.getDriver()
 
+//find element by xpath to get the element of toast with text key
 def toast = driver.findElementByXPath('//android.widget.Toast[@text=\'Success add Product to cart\']')
 
 println('Toast element: ' + toast)
 
-if (toast == null) {
-    KeywordUtil.markFailed('ERROR: Toast object not found!')
-}
 'Back to the main page\r\n'
-
 Mobile.pressBack()
-
 
 Mobile.pressBack()
 
@@ -61,19 +58,13 @@ Mobile.tap(findTestObject('RecentPage_Object/ItemInfo_Object/btn_ADD'), 0)
 
 println('Toast element: ' + toast)
 
-if (toast == null) {
-    KeywordUtil.markFailed('ERROR: Toast object not found!')
-}
-
-
- 'Back to the main page\r\n'
-
+'Back to the main page\r\n'
 Mobile.pressBack()
 
 Mobile.tap(findTestObject('RecentPage_Object/imgView_Mini Digital Speaker'), 0)
 
 Mobile.verifyElementVisible(findTestObject('RecentPage_Object/ItemInfo_Object/txtView_Mini Digital Speaker TD-V26 USB FM Radio SD TF Card MP3 - Red'), 
-        0)
+    0)
 
 Mobile.tap(findTestObject('RecentPage_Object/ItemInfo_Object/btn_ADD TO CART'), 0)
 
@@ -83,6 +74,3 @@ Mobile.tap(findTestObject('RecentPage_Object/ItemInfo_Object/btn_ADD'), 0)
 
 println('Toast element: ' + toast)
 
-if (toast == null) {
-	KeywordUtil.markFailed('ERROR: Toast object not found!')
-}
