@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory as MobileDriverFactory
 import io.appium.java_client.AppiumDriver as AppiumDriver
 
-Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FAILURE)
+Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.OPTIONAL)
 
 Mobile.waitForElementPresent(findTestObject('RecentPage_Object/imgView_Apple watch'), 0)
 
@@ -73,4 +73,7 @@ Mobile.setText(findTestObject('RecentPage_Object/ItemInfo_Object/txtField_Number
 Mobile.tap(findTestObject('RecentPage_Object/ItemInfo_Object/btn_ADD'), 0)
 
 println('Toast element: ' + toast)
+
+'back to the main page'
+Mobile.pressBack()
 
