@@ -17,9 +17,11 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FAILURE)
+Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.OPTIONAL)
 
 Mobile.waitForElementPresent(findTestObject('NavBar_Object/btn_Profile'), 0)
+
+Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('NavBar_Object/btn_Profile'), 0)
 
@@ -69,6 +71,6 @@ Mobile.verifyElementText(findTestObject('ProfilePage_Object/txt_viewPhoneNumber'
 
 Mobile.verifyElementText(findTestObject('ProfilePage_Object/txt_viewAddress'), address)
 
-'back to the main page'
-Mobile.tap(findTestObject('NavBar_Object/btn_Recent'), 0)
+'back to the main page\r\n'
+Mobile.pressBack()
 
