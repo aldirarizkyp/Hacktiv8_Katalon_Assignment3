@@ -41,9 +41,6 @@ println('Toast element: ' + toast)
 
 if (toast == null) {
     KeywordUtil.markFailed('ERROR: Toast object not found!')
-
-    'Back to the main page\r\n'
-    Mobile.pressBack()
 }
 
 Mobile.tap(findTestObject('Cart_Object/btn_Cart'), 0)
