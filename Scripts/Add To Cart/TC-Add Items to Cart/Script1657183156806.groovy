@@ -41,8 +41,9 @@ println('Toast element: ' + toast)
 
 if (toast == null) {
     KeywordUtil.markFailed('ERROR: Toast object not found!')
-
-    'Back to the main page\r\n'
-    Mobile.pressBack()
 }
+
+'Back to the main page\r\n'
+Mobile.pressBack()
+
 

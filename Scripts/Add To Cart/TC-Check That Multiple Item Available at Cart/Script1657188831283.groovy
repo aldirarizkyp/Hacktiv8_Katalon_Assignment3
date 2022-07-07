@@ -43,13 +43,59 @@ if (toast == null) {
     KeywordUtil.markFailed('ERROR: Toast object not found!')
 }
 
+'Back to the main page\r\n'
+Mobile.pressBack()
+
+Mobile.pressBack()
+
+Mobile.tap(findTestObject('RecentPage_Object/imgView_Samsung Galaxy S10 - Black'), 0)
+
+Mobile.verifyElementVisible(findTestObject('RecentPage_Object/ItemInfo_Object/txtView_Samsung Galaxy S10 - Black'), 0)
+
+Mobile.tap(findTestObject('RecentPage_Object/ItemInfo_Object/btn_ADD TO CART'), 0)
+
+Mobile.setText(findTestObject('RecentPage_Object/ItemInfo_Object/txtField_Number of Order'), '1', 0)
+
+Mobile.tap(findTestObject('RecentPage_Object/ItemInfo_Object/btn_ADD'), 0)
+
+println('Toast element: ' + toast)
+
+if (toast == null) {
+    KeywordUtil.markFailed('ERROR: Toast object not found!')
+}
+
+'Back to the main page\r\n'
+Mobile.pressBack()
+
+Mobile.tap(findTestObject('RecentPage_Object/imgView_Mini Digital Speaker'), 0)
+
+Mobile.verifyElementVisible(findTestObject('RecentPage_Object/ItemInfo_Object/txtView_Mini Digital Speaker TD-V26 USB FM Radio SD TF Card MP3 - Red'), 
+    0)
+
+Mobile.tap(findTestObject('RecentPage_Object/ItemInfo_Object/btn_ADD TO CART'), 0)
+
+Mobile.setText(findTestObject('RecentPage_Object/ItemInfo_Object/txtField_Number of Order'), '2', 0)
+
+Mobile.tap(findTestObject('RecentPage_Object/ItemInfo_Object/btn_ADD'), 0)
+
+println('Toast element: ' + toast)
+
+if (toast == null) {
+    KeywordUtil.markFailed('ERROR: Toast object not found!')
+}
+
 Mobile.tap(findTestObject('Cart_Object/btn_Cart'), 0)
 
-Mobile.verifyElementVisible(findTestObject('Cart_Object/ShoppingCart_Object/layout_Item1'), 0)
+Mobile.delay(0, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.verifyElementVisible(findTestObject('Cart_Object/ShoppingCart_Object/layout_FirstItem'), 0)
+
+Mobile.verifyElementVisible(findTestObject('Cart_Object/ShoppingCart_Object/layout_SecondItem'), 0)
+
+Mobile.verifyElementVisible(findTestObject('Cart_Object/ShoppingCart_Object/layout_ThirdItem'), 0)
 
 Mobile.pressBack()
 
+'back to the main page\r\n'
 Mobile.pressBack()
-
-Mobile.tap(findTestObject('NavBar_Object/btn_Recent'), 0)
 
