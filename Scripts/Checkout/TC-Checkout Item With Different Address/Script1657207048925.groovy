@@ -19,9 +19,9 @@ import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory as MobileDriverFactory
 import io.appium.java_client.AppiumDriver as AppiumDriver
 
-Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FAILURE)
+Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.OPTIONAL)
 
-Mobile.waitForElementPresent(findTestObject('RecentPage_Object/imgView_Apple watch'), 0)
+Mobile.waitForElementPresent(findTestObject('RecentPage_Object/imgView_Apple watch'), 30)
 
 Mobile.tap(findTestObject('RecentPage_Object/imgView_Apple watch'), 0)
 
@@ -59,7 +59,7 @@ Mobile.tap(findTestObject('CheckoutPage_Object/txtEdited_Address'), 0)
 
 Mobile.clearText(findTestObject('CheckoutPage_Object/txtEdited_Address'), 0)
 
-Mobile.setText(findTestObject('CheckoutPage_Object/txtField_EmptyAddress'), 'Bintaro Tangerang Selatan', 0)
+Mobile.setText(findTestObject('CheckoutPage_Object/txtField_EmptyAddress'), 'Bintaro Tangerang', 0)
 
 Mobile.pressBack()
 
@@ -70,15 +70,15 @@ Mobile.tap(findTestObject('CheckoutPage_Object/dropdown_Shipping'), 0)
 Mobile.tap(findTestObject('CheckoutPage_Object/txtView_FedEx'), 0)
 
 Mobile.verifyElementAttributeValue(findTestObject('CheckoutPage_Object/txt_OrderDetail'), 'resource-id', 'com.solodroid.solomerce:id/edt_order_list', 
-    0)
+    0, FailureHandling.OPTIONAL)
 
 Mobile.tap(findTestObject('CheckoutPage_Object/btn_PROCESS CHECKOUT'), 0)
 
-Mobile.waitForElementPresent(findTestObject('CheckoutPage_Object/txtView_Are you sure want to checkout'), 0)
+Mobile.waitForElementPresent(findTestObject('CheckoutPage_Object/txtView_Are you sure want to checkout'), 0, FailureHandling.OPTIONAL)
 
 Mobile.tap(findTestObject('CheckoutPage_Object/btn_YES(Process Checkout)'), 0)
 
-Mobile.waitForElementPresent(findTestObject('CheckoutPage_Object/txtView_Congratulation(Order Success)'), 20, FailureHandling.OPTIONAL)
+Mobile.waitForElementPresent(findTestObject('CheckoutPage_Object/txtView_Congratulation(Order Success)'), 40, FailureHandling.OPTIONAL)
 
-Mobile.tap(findTestObject('CheckoutPage_Object/btn_OK(Order Success)'), 0)
+Mobile.tap(findTestObject('CheckoutPage_Object/btn_OK(Order Success)'), 0, FailureHandling.OPTIONAL)
 
