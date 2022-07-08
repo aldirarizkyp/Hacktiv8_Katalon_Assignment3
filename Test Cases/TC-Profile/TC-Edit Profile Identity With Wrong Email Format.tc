@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC-Edit Profile Identity With Wrong Email Format</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>179c85e6-25a2-4f6d-bdd8-d64ce193e729</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>3bcfe23b-fdaa-4662-a1e1-441e4eaf5e2a</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>fa6041ae-702a-46c9-9d2f-f60752491484</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ee39b6fd-1ecb-4a7a-927a-3f12ca6098b1</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>dc700d49-89e2-4825-ba74-da827d05b731</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Aldira'</defaultValue>
+      <description></description>
+      <id>3bcfe23b-fdaa-4662-a1e1-441e4eaf5e2a</id>
+      <masked>false</masked>
+      <name>name</name>
+   </variable>
+   <variable>
+      <defaultValue>'aldira@gmail.com'</defaultValue>
+      <description></description>
+      <id>fa6041ae-702a-46c9-9d2f-f60752491484</id>
+      <masked>false</masked>
+      <name>email</name>
+   </variable>
+   <variable>
+      <defaultValue>'087734232321'</defaultValue>
+      <description></description>
+      <id>ee39b6fd-1ecb-4a7a-927a-3f12ca6098b1</id>
+      <masked>false</masked>
+      <name>phonenumber</name>
+   </variable>
+   <variable>
+      <defaultValue>'Senayan Jakarta'</defaultValue>
+      <description></description>
+      <id>dc700d49-89e2-4825-ba74-da827d05b731</id>
+      <masked>false</masked>
+      <name>address</name>
+   </variable>
+</TestCaseEntity>

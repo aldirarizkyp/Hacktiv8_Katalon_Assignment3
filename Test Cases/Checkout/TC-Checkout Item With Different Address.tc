@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC-Checkout Item With Different Address</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3e5e09a7-bba1-4d0a-b3e2-bdb81c4f1aa0</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>387f736d-9a1e-48b8-ac09-60b8c530b645</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>221e0777-752a-4591-ab22-de1c52e93bfa</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d48c0e8f-b43d-4894-8f87-6612ec32fef8</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>8fa7c680-35b1-4c30-8b04-bd38d1d14cf5</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Aldira'</defaultValue>
+      <description></description>
+      <id>387f736d-9a1e-48b8-ac09-60b8c530b645</id>
+      <masked>false</masked>
+      <name>name</name>
+   </variable>
+   <variable>
+      <defaultValue>'aldira@gmail.com'</defaultValue>
+      <description></description>
+      <id>221e0777-752a-4591-ab22-de1c52e93bfa</id>
+      <masked>false</masked>
+      <name>email</name>
+   </variable>
+   <variable>
+      <defaultValue>'087734232321'</defaultValue>
+      <description></description>
+      <id>d48c0e8f-b43d-4894-8f87-6612ec32fef8</id>
+      <masked>false</masked>
+      <name>phonenumber</name>
+   </variable>
+   <variable>
+      <defaultValue>'Senayan Jakarta'</defaultValue>
+      <description></description>
+      <id>8fa7c680-35b1-4c30-8b04-bd38d1d14cf5</id>
+      <masked>false</masked>
+      <name>address</name>
+   </variable>
+</TestCaseEntity>
